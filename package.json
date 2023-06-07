@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsup src",
-    "start": "node ./dist/shared/infra/http/server.cjs",
+    "start": "node ./dist/shared/infra/http/server.mjs",
     "dev": "ts-node-dev -r tsconfig-paths/register --transpile-only --ignore-watch node_modules --poll --respawn src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
