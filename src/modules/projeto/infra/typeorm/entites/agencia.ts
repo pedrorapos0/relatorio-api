@@ -10,4 +10,7 @@ export class Agencia {
 
   @Column("int")
   deletado: number;
+
+  @Column("int")
+  digito: number;
 }

@@ -9,5 +9,8 @@ export class Conta {
   conta: string;
 
   @Column("int")
+  digito: number;
+
+  @Column("int")
   deletado: number;
 }

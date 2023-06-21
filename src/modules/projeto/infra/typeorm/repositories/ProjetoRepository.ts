@@ -42,11 +42,15 @@ export class ProjetoRepository implements IProjetoRepository {
         "projeto.vigencia_final",
         "projeto.orcamento",
         "statusprojeto.descricao",
+        "coordenadores",
+        "usuario.descricao",
         "agentefinanciador.descricao",
         "contas_corrente",
         "banco.descricao",
         "agencia.agencia",
+        "agencia.digito",
         "conta.conta",
+        "conta.digito"
       ])
       .where("projeto.deletado is null and projeto.numero = :numero", {
         numero: codigo_projeto,
@@ -92,7 +96,9 @@ export class ProjetoRepository implements IProjetoRepository {
         "usuario.descricao",
         "banco.descricao",
         "agencia.agencia",
+        "agencia.digito",
         "conta.conta",
+        "conta.digito",
       ])
       .where(
         "projeto.deletado is null and codsituacaoprojeto = :codSituacaoprojeto",
